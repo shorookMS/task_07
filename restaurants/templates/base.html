@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static  %}
+<html>
+<head>
+	<title>
+		{% block title %}
+
+		{% endblock title%}
+	</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'custom.css' %}">
+
+</head>
+<body>
+	<h2><a href="{% url 'restaurant-list' %}">Home</a></h2>
+	</ul>
+		{% block content %}
+		
+		{% endblock content %}
+</body>
+</html>
